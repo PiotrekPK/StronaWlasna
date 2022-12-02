@@ -1,43 +1,87 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header_main {
-    background-color: red;
-    min-height: 100vh;
+  background-color: red;
+  min-height: 100vh;
 }
 
 .section_burger {
-    background-color: #ffd553;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+  background-color: #ffd553;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 0;
 }
+.section_burger h1 {
+  font-size: 60px;
+  font-family: "Nerko One", cursive;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.section_burger img.burger:nth-of-type(1) {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  opacity: 0.6;
+  transform: rotate(10deg);
+  width: 400px;
+  height: 400px;
+}
+.section_burger img.burger:nth-of-type(2) {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  opacity: 0.6;
+  transform: rotate(-10deg);
+  width: 400px;
+  height: 400px;
+}
+
 .section_burger__czlowiek {
-
-    height: 600px;
-    margin-left: 100px;
+  position: relative;
+  z-index: 1;
+  height: 600px;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
+
 .section_burger__czlowiek img {
-
-    height: 100%;
-    
+  height: 100%;
 }
+
 .section_burger__text {
-    height: 600px;
-    font-size: 30px;
-    font-family: 'Nerko One', cursive;
+  position: relative;
+  z-index: 1;
+  width: 60%;
+  height: 600px;
+  font-size: 30px;
+  font-family: "Nerko One", cursive;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 20px;
+}
+.section_burger__text:hover {
+  opacity: 0.8;
+  background-color: #ffc332;
 }
 .section_burger__menu {
-    background-color: #ffc332;;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 20px;
-    width: 50%;
-    height: 600px; 
-    margin: 0 50px;
-
+  background-color: #ffc332;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 20px;
+  width: 1000px;
+  height: 600px;
+  margin: 50px 50px;
 }
