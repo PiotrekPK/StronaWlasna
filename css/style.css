@@ -3,7 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.name {
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+  height: 100vh;
+  background-image: url(../img/crazy-style-space-background_52683-95511.webp);
+  background-position: center;
+  background-size: cover;
+}
+.name__wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 200px;
+  background-color: grey;
+}
 .header_main {
   background-color: red;
   min-height: 100vh;
@@ -11,6 +28,7 @@
 
 .section_burger {
   background-color: #ffd553;
+  font-family: "Nerko One", cursive;
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -20,9 +38,8 @@
 }
 .section_burger h1 {
   font-size: 60px;
-  font-family: "Nerko One", cursive;
   position: absolute;
-  top: 40px;
+  top: 10px;
   width: 100%;
   text-align: center;
 }
@@ -50,7 +67,7 @@
   position: relative;
   z-index: 1;
   height: 600px;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -63,25 +80,57 @@
   position: relative;
   z-index: 1;
   width: 60%;
-  height: 600px;
+  /* height: 600px; */
   font-size: 30px;
-  font-family: "Nerko One", cursive;
   transition: 0.3s;
-  padding: 10px;
+  padding: 40px 10px;
   border-radius: 20px;
 }
 .section_burger__text:hover {
-  opacity: 0.8;
+  opacity: 0.9;
   background-color: #ffc332;
+  cursor: pointer;
 }
 .section_burger__menu {
   background-color: #ffc332;
+  padding: 30px;
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 20px;
-  width: 1000px;
-  height: 600px;
+  width: 30%;
+  height: 500px;
   margin: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.section_burger__menu h2 {
+  font-size: 35px;
+}
+.section_burger__menu p {
+  font-size: 20px;
+}
+.section_burger__menu input {
+  display: block;
+  background-color: #c49527;
+  font-family: "Nerko One", cursive;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  height: 45px;
+  border-radius: 10px;
+  border: 3px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+.section_burger__menu button {
+  display: block;
+  font-family: "Nerko One", cursive;
+  background-color: #c49527;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  height: 45px;
+  border-radius: 10px;
+  border: 3px solid black;
+  font-size: 20px;
 }
