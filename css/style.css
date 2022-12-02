@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_main {
+    background-color: red;
+    min-height: 100vh;
+}
+
+.section_burger {
+    background-color: #ffd553;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.section_burger__czlowiek {
+
+    height: 600px;
+    margin-left: 100px;
+}
+.section_burger__czlowiek img {
+
+    height: 100%;
+    
+}
+.section_burger__text {
+    height: 600px;
+    font-size: 30px;
+    font-family: 'Nerko One', cursive;
+}
+.section_burger__menu {
+    background-color: #ffc332;;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+    width: 50%;
+    height: 600px; 
+    margin: 0 50px;
+
+}
