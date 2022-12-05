@@ -3,28 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.name {
-  position: fixed;
-  width: 100vw;
-  z-index: 10;
-  height: 100vh;
-  background-image: url(../img/sky-art.gif);
-  background-position: center;
-  background-size: cover;
-}
-.name__wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: 200px;
-  background-color: rgb(95, 10, 95);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  opacity: 0.9;
-}
+
 .header_main {
   background-color: red;
   min-height: 100vh;
@@ -137,4 +116,36 @@
   border-radius: 10px;
   border: 3px solid black;
   font-size: 20px;
+}
+
+.section_lod {
+  min-height: 100vh;
+  background-color: blue;
+  display: flex;
+  background-image: url("../img/Bez\ tytułu.png");
+  opacity: .9;
+  background-position: center;
+  background-size: cover;
+}
+
+.section_lod__text {
+  width: 40%;
+  background-color: white;
+  border-radius: 0 20px 20px 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 30px;
+}
+.section_lod__obrazy {
+  width: 60%;
+  position: relative;
+}
+
+.section_lod__text h2 {
+  font-size: 38px;
+  margin-top: 60px;
+}
+.section_lod__text p {
+  font-size: 25px;
+  margin-top: 20px;
+  padding-right: 90px;
 }
