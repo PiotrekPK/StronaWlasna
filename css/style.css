@@ -3,16 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  overflow: hidden;
+}
 
 .header_main {
   background-color: red;
-  min-height: 100vh;
+  height: 100vh;
+}
+.bl {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  position: absolute;
+  top: 40%;
+  left: 40%;
 }
 
 .section_burger {
   background-color: #ffd553;
   font-family: "Nerko One", cursive;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,7 +130,7 @@
 }
 
 .section_lod {
-  min-height: 100vh;
+  height: 100vh;
   background-color: blue;
   display: flex;
   background-image: url("../img/Bez\ tytułu.png");
