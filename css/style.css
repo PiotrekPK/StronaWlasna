@@ -10,15 +10,90 @@ html {
 .header_main {
   background-color: red;
   height: 100vh;
+  text-align: center;
+  font-family: 'Secular One', sans-serif;
+  background-image: url(../img/5559852.jpg);
+  background-position: center;
+  background-size: cover;
 }
-.bl {
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
+
+.header_main {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_main__wrap {
+  width: 70%;
+  height: 550px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.qestion_1 ,.qestion_2, .qestion_3{
+  background-color: #22364F;
+  width: 30%;
+  height: 80%;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: .9;
+  
+    
+}
+.qestion_1 {
+  animation: buttonHeader 3s infinite .5s;
+
+}
+.qestion_2 {
+  animation: buttonHeader 3s infinite 1s;
+}
+.qestion_3 {
+  animation: buttonHeader 3s infinite ;
+
+}
+
+.qestion_1.active {
   position: absolute;
-  top: 40%;
-  left: 40%;
+  width: 800px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: none;
+  opacity: 1;
+  z-index: 2;
 }
+
+.header_main__wrap h3 {
+  color: white;
+  font-size: 30px;
+}
+
+.header_main__wrap p{
+  color: white;
+  font-size: 18px;
+}
+
+
+.header_main__wrap button{
+  display: block;
+  width: 70%;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
 
 .section_burger {
   background-color: #ffd553;
@@ -160,4 +235,15 @@ html {
   font-size: 25px;
   margin-top: 20px;
   padding-right: 90px;
+}
+
+.section_cash {
+  background-color: #ffd553;
+  font-family: "Nerko One", cursive;
+  height: 100vh;
+  display: flex;
+}
+
+@keyframes buttonHeader {
+  50% {transform: scale(1.02);}
 }

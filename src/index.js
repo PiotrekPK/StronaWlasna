@@ -1,5 +1,9 @@
 const sections = document.querySelectorAll(".section");
 const div = document.querySelector(".bl");
+const headerBtn = document.querySelectorAll(".header_btn")
+const question_1 = document.querySelector(".qestion_1")
+const question_2 = document.querySelector(".qestion_2")
+const question_3 = document.querySelector(".qestion_3")
 
 sections[0].scrollIntoView({
   behavior: "smooth",
@@ -31,10 +35,20 @@ document.addEventListener("mousewheel", function (e) {
   });
 });
 
-window.addEventListener("mousemove", (e) => {
-  console.log(e.clientX);
-  console.log(e.clientY);
-  div.style.transform = `translate(${(e.clientX / 100) * -1}px, ${
-    (e.clientY / 100) * -1
-  }px)`;
-});
+
+headerBtn.forEach(el => {
+  el.addEventListener("click", btnsHeader)
+}) 
+
+function btnsHeader() {
+  if (this.className === "header_btn btn_1"){
+    question_1.classList.toggle("active")
+    document.body.style.filter = "blur(.2)"
+  }
+  if (this.className === "header_btn btn_2"){
+    question_1.classList.toggle("active")
+  }
+  if (this.className === "header_btn btn_3"){
+    question_1.classList.toggle("active")
+  }
+}
